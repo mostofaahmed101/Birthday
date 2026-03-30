@@ -20,6 +20,9 @@
 
 <body>
     <div id="wrapper">
+
+        
+
         <div class="flag__birthday">
             <img src="./images/1.png" alt="" width="350" class="flag__left">
             <img src="./images/1.png" alt="" width="350" class="flag__right">
@@ -51,6 +54,22 @@
                 <div class="date__of__birth">
                     <span></span>
                 </div>
+
+                
+                <audio id="bg-music" loop>
+                    <source src="music.mp3" type="audio/mpeg">
+                </audio>
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div onclick="playMusic()">
+                            Play Music
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                    </button>
+                </div>
+
+
+
                 <div class="btn">
                     <button id="btn__letter">
                         <div class="mail">
@@ -148,7 +167,9 @@
                             possibilities. Whatever you choose to do, wherever life takes you, just know that 
                             you’re capable of achieving more than you can imagine. Keep believing in yourself and 
                             never be afraid to shine a little brighter. And hey, if life ever gets tough, just 
-                            remember you’ve survived every boss fight so far, so clearly you’re built for this. lol
+                            remember you’ve survived every boss fight so far, so clearly you’re built for this. lol <br>
+                            Anyway, enough of the deep stuff it’s your birthday!!!!! <br>
+                            Happy 19th Birthday, My Dear Martyna! 🎉
                         </h2>
 
                         <div class="imageCute2">
@@ -162,8 +183,19 @@
 
 </body>
 <script>
+
+    function playMusic() {
+  document.getElementById("bg-music").play();
+}
+
+
+
+
+
+
+
     let datetxt = "1 April";
-    let datatxtletter = "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
+    let datatxtletter = "You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
     let titleLetter = "To you";
     let charArrDate = datetxt.split('');
     let charArrDateLetter = datatxtletter.split('');
@@ -261,6 +293,11 @@
     close.addEventListener('click', function () {
         boxmail.classList.remove('active')
     })
+
+
+
+
+    
 </script>
 
 </html>
